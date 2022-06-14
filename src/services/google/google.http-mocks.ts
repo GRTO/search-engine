@@ -28,7 +28,7 @@ export const httpMockGoogleResponse = (
   };
 
   const apiUrl = "https://www.googleapis.com";
-  const query = `/customsearch/v1?key=${process.env.REACT_APP_GOOGLE_SEARCH_API}&cx=${process.env.REACT_APP_GOOGLE_SEARCHY_ID}&q=${parameters.searchText}`;
+  const query = `/customsearch/v1?key=${process.env.REACT_APP_GOOGLE_SEARCH_API}&cx=${process.env.REACT_APP_GOOGLE_SEARCH_ID}&q=${parameters.searchText}`;
 
   return nock(apiUrl).get(query).reply(code, response);
 };

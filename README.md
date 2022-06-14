@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# Getting Started with the search engine project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is a search engine that uses Google and Azure api rest.
 
-## Available Scripts
+# Before run the project
 
-In the project directory, you can run:
+To run the project, you have to create first you have to update the `.env` file that is provided in the project.
 
-### `npm start`
+## For Google keys
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get the `REACT_APP_GOOGLE_SEARCH_API` and `REACT_APP_GOOGLE_SEARCH_ID` you can go to the [Custom Search Google API](https://developers.google.com/custom-search/v1/overview) engine provided by Google.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- First you have to create and configure your Programmable Search Engine [here](https://programmablesearchengine.google.com/). Doing so, you will get `REACT_APP_GOOGLE_SEARCH_ID` that it will be the Search Engine ID.
 
-### `npm test`
+> **Note:** For this project, we are going to use the Custom Search JSON API, and this has a limit of 10,000 queries per day.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Then, you have to get the API key for Custom Search JSON API. Just click the blue button that says `Get a Key` and select any project to enable the Custom Search API. Then, assi9gn `REACT_APP_GOOGLE_SEARCH_API` with this key in your `.env` file.
 
-### `npm run build`
+## For Azure keys
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get the `REACT_APP_AZURE_SUBSCRIPTION_KEY`, you can go to the [Bing Web Search API](https://www.microsoft.com/en-us/bing/apis/bing-web-search-api) and create your own Bing Resource.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- You just have to click try it now and then select the free trial version.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> **Note:** For this project, we are going the free trial version, this means we just can run 1000 search per month. More details [here](https://www.microsoft.com/en-us/bing/apis/pricing).
 
-### `npm run eject`
+- When you get the key, just replace it on the `REACT_APP_AZURE_SUBSCRIPTION_KEY`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# How to run the project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After getting the credentials, you have to run `npm run start`. This will run project in http://localhost:3000/.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Testing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+If you want to test the project, just run `npm run test`.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Help
+Contact me at gerson.toribio@pucp.pe
