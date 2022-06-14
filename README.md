@@ -1,5 +1,9 @@
 # Getting Started with the search engine project
 
+Here I have a deployed version of the application, you can see the final of the app depleyed in the following link - [Search Engine Platform](search-engine-phi.vercel.app).
+
+![Search Engine App](https://i.ibb.co/m93gjSm/Screen-Shot-2022-06-14-at-00-58-40.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is a search engine that uses Google and Azure api rest.
 
 # Before run the project
